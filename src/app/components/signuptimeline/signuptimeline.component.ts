@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class SignuptimelineComponent implements OnInit {
 
   @Input() step = 1;
+  @Input() title: string = '';
 
   public showDetail: boolean;
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-searchbox',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class SearchboxComponent {
 
   public filtered: boolean = false;
+  @Input() title: string = '';
 
   setFiltered() {
     this.filtered = true;

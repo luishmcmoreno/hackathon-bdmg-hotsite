@@ -11,7 +11,6 @@ import { ServerServiceModule } from '@pluritech/server-service';
 import { AuthServiceModule } from '@pluritech/auth-service';
 import { PaginationModule } from '@pluritech/pagination';
 import { NgImagePreviewModule } from '@pluritech/ng-image-preview';
-import { DialogServiceModule } from '@pluritech/dialog-service';
 import { NgxMaskModule } from 'ngx-mask';
 import { CurrencyMaskModule } from 'ng2-currency-mask';
 
@@ -59,7 +58,6 @@ import { FinanciamentoComponent } from './pages/financiamento/financiamento.comp
     AppRoutingModule,
     ServerServiceModule.forRoot(15000),
     AuthServiceModule.forRoot('MELHORES_LEILOES_KEY'),
-    DialogServiceModule.forRoot(),
     DropImageModule,
     HttpModule,
     FormsModule,

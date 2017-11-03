@@ -1,18 +1,6 @@
 image: luishmcmoreno/angular-cli-docker:master
 pipelines:
   default:
-  branches:
-    develop:
-      - step:
-          script:
-            - npm install -g rxjs
-            - npm install --quiet
-            - ng build
-            - apt-get update
-            - apt-get -qq install sshpass -y --force-yes
-            - cd dist
-            - sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r * $FTP_USERNAME@198.199.65.29:/home/pluritest/webapp.melhoresleiloes.pluritest.com.br
-    master:
       - step:
           script:
             - npm install -g rxjs
@@ -21,4 +9,4 @@ pipelines:
             - apt-get update
             - apt-get -qq install sshpass -y --force-yes
             - cd dist
-            - sshpass -p $FTP_PROD_PASSWORD scp -o StrictHostKeyChecking=no -r * $FTP_PROD_USERNAME@198.199.65.29:/home/melhoresleiloes/public_html
+            - sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r * $FTP_USERNAME@198.199.65.29:/home/pluritest/webapp.hackathonbdmg.pluritest.com.br

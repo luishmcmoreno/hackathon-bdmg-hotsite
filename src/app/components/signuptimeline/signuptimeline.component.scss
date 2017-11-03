@@ -56,7 +56,7 @@
   position: relative;
   width:0px;
   box-shadow: none;
-  background: $brand-primary;
+  background: none;
 }
 
 .bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
@@ -64,7 +64,7 @@
 }
 
 .bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {
-  width:50%;
+  width:100%;
 }
 
 .bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {

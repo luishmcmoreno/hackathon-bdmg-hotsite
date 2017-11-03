@@ -7,7 +7,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class OrganizationSearchboxComponent implements OnInit {
 
-  @Input() title: string;
+  @Input() title: string = '';
   @Input() buttonText: string;
   @Output() search: EventEmitter<any> = new EventEmitter<any>();
   public searchTerm: string;

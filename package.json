@@ -22,7 +22,6 @@
     "@angular/platform-browser-dynamic": "^4.4.6",
     "@angular/router": "^4.4.6",
     "@pluritech/auth-service": "^2.1.0",
-    "@pluritech/dialog-service": "^1.2.0",
     "@pluritech/ng-drop-image": "^1.0.3",
     "@pluritech/ng-image-preview": "^1.2.0",
     "@pluritech/ng2-responsive-table": "^1.1.1",
