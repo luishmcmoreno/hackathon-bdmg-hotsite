@@ -6,7 +6,7 @@
           <span class="glyphicon glyphicon-user"></span>
         </a>
         <div class="text-center bs-wizard-stepnum text-primary">Registro</div>
-        <p *ngIf="showDetail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, nam aperiam deserunt animi optio amet itaque tempore reiciendis veritatis beatae quia porro iste provident deleniti non voluptatum esse neque illo!</p>
+        <p class="text-center internal-padding" *ngIf="showDetail">Este foi o passo que você já realizou quando inseriu as informações do seu negócio, visualizou a estimativa do investimento e aprovou o inicio da cotação do empréstimo.</p>
       </div>
 
       <div class="col-xs-2 bs-wizard-step" [class.complete]="step > 2" [class.active]="step === 2" [class.disabled]="step < 2">
@@ -15,7 +15,7 @@
           <span class="glyphicon glyphicon-refresh"></span>
         </a>
         <div class="text-center bs-wizard-stepnum text-primary">Integrador</div>
-        <p *ngIf="showDetail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, nam aperiam deserunt animi optio amet itaque tempore reiciendis veritatis beatae quia porro iste provident deleniti non voluptatum esse neque illo!</p>
+        <p class="text-center internal-padding" *ngIf="showDetail">O integrador é a pessoa responsável por analisar a viabilidade do projeto de instalação fotovoltaica na sua empresa e montar o projeto que será enviado para analise pelo BDMG. Você precisa selecionar um dos intermediadores parceiros para que este passo seja concluído.</p>
       </div>
 
       <div class="col-xs-2 bs-wizard-step" [class.complete]="step > 3" [class.active]="step === 3" [class.disabled]="step < 3">
@@ -24,7 +24,7 @@
           <span class="glyphicon glyphicon-eye-open"></span>
         </a>
         <div class="text-center bs-wizard-stepnum text-primary">Projeto</div>
-        <p *ngIf="showDetail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, nam aperiam deserunt animi optio amet itaque tempore reiciendis veritatis beatae quia porro iste provident deleniti non voluptatum esse neque illo!</p>
+        <p class="text-center internal-padding" *ngIf="showDetail">O integrador é o responsável por montar o seu projeto de instalação fotovoltaica. Para que esta etapa seja concluída o integrador deverá realizar a visita e anexar os documentos descritivos do projeto para análise do BDMG. Caso o integrador demore para a construção e envio deste documento você pode escolher outro integrador ao cancelar este projeto.</p>
       </div>
 
       <div class="col-xs-2 bs-wizard-step" [class.complete]="step > 4" [class.active]="step === 4" [class.disabled]="step < 4">
@@ -33,7 +33,7 @@
           <span class="glyphicon glyphicon-ok"></span>
         </a>
         <div class="text-center bs-wizard-stepnum text-primary">Análise</div>
-        <p *ngIf="showDetail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, nam aperiam deserunt animi optio amet itaque tempore reiciendis veritatis beatae quia porro iste provident deleniti non voluptatum esse neque illo!</p>
+        <p class="text-center internal-padding" *ngIf="showDetail">Esta etapa só será iniciada quando todos os documentos do projeto tiverem sido anexados pelo integrador, neste ponto o BDMG irá analisar a viabilidade do projeto e conceder ou não a autorização do desenvolvimento do projeto.</p>
       </div>
 
       <div class="col-xs-2 bs-wizard-step" [class.complete]="step > 4" [class.active]="step === 4" [class.disabled]="step < 4">
@@ -42,12 +42,12 @@
           <span class="glyphicon glyphicon-ok"></span>
         </a>
         <div class="text-center bs-wizard-stepnum text-primary">Aprovação</div>
-        <p *ngIf="showDetail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, nam aperiam deserunt animi optio amet itaque tempore reiciendis veritatis beatae quia porro iste provident deleniti non voluptatum esse neque illo!</p>
+        <p class="text-center internal-padding" *ngIf="showDetail">Parabéns, se você chegou neste ponto o seu projeto foi aprovado pelo BDMG e o seu integrador já entrará em contato para o desenvolvimento do projeto.</p>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12">
-        <p class="text-center" (click)="toggleDetail()">
+        <p class="text-center pointer" (click)="toggleDetail()">
           Não entendi, me explique melhor
           <i class="fa" [ngClass]="{'fa-arrow-down': !showDetail, 'fa-arrow-up': showDetail}"></i>
         </p>
@@ -55,9 +55,9 @@
     </div>
     <div class="row">
       <div class="col-xs-12 custom-message">
-        <p class="text-center">
+        <div class="text-center">
           <b>Encontre o melhor integrador de acordo com o seu gosto e marque uma visita com ele.</b>
-        </p>
+        </div>
       </div>
     </div>
   </div>
