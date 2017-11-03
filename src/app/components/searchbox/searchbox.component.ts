@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SearchboxComponent {
 
+  public filtered: boolean = false;
 
+  setFiltered() {
+    this.filtered = true;
+  }
 
 }

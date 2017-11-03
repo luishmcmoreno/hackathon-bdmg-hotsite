@@ -34,6 +34,9 @@ import { FooterComponent } from './parts/footer/footer.component';
 import { MenuComponent } from './parts/menu/menu.component';
 import { InternalComponent } from './pages/internal/internal.component';
 import { InternalMenuComponent } from './parts/internal-menu/internal-menu.component';
+import { AcompanharComponent } from './pages/acompanhar/acompanhar.component';
+import { ProjetoComponent } from './pages/projeto/projeto.component';
+import { FinanciamentoComponent } from './pages/financiamento/financiamento.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +50,9 @@ import { InternalMenuComponent } from './parts/internal-menu/internal-menu.compo
     MenuComponent,
     InternalComponent,
     InternalMenuComponent,
+    AcompanharComponent,
+    ProjetoComponent,
+    FinanciamentoComponent,
   ],
   imports: [
     BrowserModule,
