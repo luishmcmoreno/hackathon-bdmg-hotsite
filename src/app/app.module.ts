@@ -36,6 +36,7 @@ import { InternalMenuComponent } from './parts/internal-menu/internal-menu.compo
 import { AcompanharComponent } from './pages/acompanhar/acompanhar.component';
 import { ProjetoComponent } from './pages/projeto/projeto.component';
 import { FinanciamentoComponent } from './pages/financiamento/financiamento.component';
+import { AnaliseComponent } from './pages/analise/analise.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { FinanciamentoComponent } from './pages/financiamento/financiamento.comp
     AcompanharComponent,
     ProjetoComponent,
     FinanciamentoComponent,
+    AnaliseComponent,
   ],
   imports: [
     BrowserModule,

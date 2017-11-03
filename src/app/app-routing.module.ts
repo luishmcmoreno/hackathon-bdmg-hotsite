@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjetoComponent } from './pages/projeto/projeto.component';
 import { FinanciamentoComponent } from './pages/financiamento/financiamento.component';
 import { AcompanharComponent } from './pages/acompanhar/acompanhar.component';
+import { AnaliseComponent } from './pages/analise/analise.component';
 import { SiteComponent } from './parts/site/site.component';
 
 
@@ -27,6 +28,10 @@ const routes: Routes = [
       {
        path: 'acompanhar',
        component: AcompanharComponent 
+      },
+      {
+        path: 'analise',
+        component: AnaliseComponent
       },
       {
         path: 'financiamento',
