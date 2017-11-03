@@ -1,0 +1,15 @@
+.logo-brand {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar {
+  margin-bottom: 0;
+  background: url(../../../assets/onepage2/img/bg/bg-verde2.jpg);
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background-color: initial !important;
+}
