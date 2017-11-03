@@ -1751,6 +1751,7 @@ a:focus {
     top: 62%; }
 
   .carousel .caroulsel-position-four{
+    position: absolute;
     top: 68% !important; }
   .carousel .carousel-caption .animate-delay {
     animation-delay: 1s; }
