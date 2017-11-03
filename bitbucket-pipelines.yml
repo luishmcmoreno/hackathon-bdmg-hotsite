@@ -9,4 +9,4 @@ pipelines:
             - apt-get update
             - apt-get -qq install sshpass -y --force-yes
             - cd dist
-            - sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r * $FTP_USERNAME@198.199.65.29:/home/pluritest/webapp.hackathonbdmg.pluritest.com.br
+            - sshpass -p $FTP_PASSWORD scp -o StrictHostKeyChecking=no -r * $FTP_USERNAME@198.199.65.29:/home/pluritest/hackathonbdmg.pluritest.com.br
