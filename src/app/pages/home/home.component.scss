@@ -1,0 +1,14 @@
+#simulation {
+  .features-bg {
+    background: #2c3a46 !important;
+    label, strong {
+      color: #fff;
+    }
+  }
+  .info-simulating {
+    color: #fff;
+    .value-simulation {
+      color: #d15d5d;
+    }
+  }
+}

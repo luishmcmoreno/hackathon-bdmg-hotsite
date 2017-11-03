@@ -20,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 
 // Providers
+import { CalculateService } from './providers/calculate/calculate.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -64,6 +65,7 @@ import { InternalMenuComponent } from './parts/internal-menu/internal-menu.compo
     NgImagePreviewModule
   ],
   providers: [
+    CalculateService
   ],
   bootstrap: [AppComponent]
 })
