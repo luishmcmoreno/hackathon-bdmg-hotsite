@@ -38,7 +38,9 @@
               <p class="carousel-position-two animate-delay carousel-subtitle-v1" data-animation="animated fadeInDown">
                 Veja o caso do Leonardo, que diminuiu em 70% <br> seu custo com energia e aumentou  em 35%<br> o número de novos alunos em sua academia.
               </p>
-              <a href="#adquira" class="carousel-position-three animate-delay btn-brd-white" data-animation="animated fadeInUp">Adquira Já o Seu</a>
+              <div class="page-scroll">
+                <a href="#adquira" class="carousel-position-three animate-delay btn-brd-white" data-animation="animated fadeInUp">Adquira Já o Seu</a>
+              </div>
           </div>
       </div>
 
@@ -63,7 +65,9 @@
                   <p class="carousel-position-two animate-delay carousel-subtitle-v4" data-animation="animated fadeInDown">
                       Que está cansado das altas contas de luz <br> e deseja ainda promover <br>um mundo melhor e sustentável!
                   </p>
-                  <a href="#adquira" class="carousel-position-three animate-delay btn-brd-white" data-animation="animated fadeInUp">Adquira Já o seu</a>
+                  <div class="page-scroll">
+                    <a href="#adquira" class="carousel-position-three animate-delay btn-brd-white" data-animation="animated fadeInUp">Adquira Já o seu</a>
+                  </div>
               </div>
           </div>
 
@@ -388,7 +392,7 @@
                             <input type="text" placeholder="Ex: Rua Mourão, 32 " class="form-control" formControlName="endereco">
 
                             <label>Município</label>:
-                            <select id="municpio" formControlName="municipio">
+                            <select id="municpio" formControlName="municipio" class="form-control">
                               <option>Abadia dos Dourados</option>
                               <option>Abaeté</option>
                               <option>Abre Campo</option>
@@ -1274,31 +1278,36 @@
             <div class="col-md-12" id="condicoes" *ngIf="showCondicoes">
                 <div class="form">
                     <div class="form-wrap">
-                        <div class="form-wrap-group" >
+                        <div class="form-wrap-group condicoes-financiamento">
                            <h3 style="text-align: center;">Condições de Financiamento</h3>
-                            <label>Valor mínimo para o projeto: {{ condicoes.minCost  }}</label>
-                                <div id="valorminimo"></div>
-                            <label>Valor máximo para o projeto: {{ condicoes.maxCost  }}</label>
-                                <div id="valormaximo"></div>
-                            <label>Valor médio para o projeto: {{ mediaEntreOsDoisValores | currency:'BRL':true }}</label>
-                                <div id="valormedio"></div>
-                            <label>Taxa de juros mensal: 1.6%</label>
-                                <div id="taxames"></div>
-                            <label>Taxa de juros anual: 21%</label>
-                                <div id="taxaano"></div>
-                            <label>Prazo de financiamento: {{ formSolicitate.get('prazo').value }} meses</label>
-                                <div id="prazo"></div>
-                            <label>Preço Estimado da Conta de Energia: {{ formSolicitate.get('kwp').value * 0.73 | currency:'BRL':true }} </label>
-                                <div id="precoestimado"></div>
-                            <label>Parcela de Financiamento: {{ pmt | currency:'BRL':true}}</label>
-                                <div id="parcelafinanciamento"></div>
-                            <label>Valor da entrada: {{ parcelaEntrada | currency:'BRL':true}}</label>
-                                <div id="parcelafinanciamento"></div>
-
-                            <div class="infoextra">
-                                ** Os valores estimados aqui podem sofrer pequenas alterações no projeto a ser elaborado pelo prestador de serviço
+                           <div class="col-md-6">
+                             <label>Valor mínimo para o projeto: {{ condicoes.minCost  }}</label>
+                                 <div id="valorminimo"></div>
+                             <label>Valor máximo para o projeto: {{ condicoes.maxCost  }}</label>
+                                 <div id="valormaximo"></div>
+                             <label>Valor médio para o projeto: {{ mediaEntreOsDoisValores | currency:'BRL':true }}</label>
+                                 <div id="valormedio"></div>
+                             <label>Taxa de juros mensal: 1.6%</label>
+                                 <div id="taxames"></div>
+                             <label>Taxa de juros anual: 21%</label>
+                                 <div id="taxaano"></div>
+                           </div>
+                           <div class="col-md-6">
+                             <label>Prazo de financiamento: {{ formSolicitate.get('prazo').value }} meses</label>
+                                 <div id="prazo"></div>
+                             <label>Preço Estimado da Conta de Energia: {{ formSolicitate.get('kwp').value * 0.73 | currency:'BRL':true }} </label>
+                                 <div id="precoestimado"></div>
+                             <label>Parcela de Financiamento: {{ pmt | currency:'BRL':true}}</label>
+                                 <div id="parcelafinanciamento"></div>
+                             <label>Valor da entrada: {{ parcelaEntrada | currency:'BRL':true}}</label>
+                                 <div id="parcelafinanciamento"></div>
+                           </div>
+                            <div class="col-md-12">
+                              <div class="infoextra">
+                                  ** Os valores estimados aqui podem sofrer pequenas alterações no projeto a ser elaborado pelo prestador de serviço
+                              </div>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
                 <div class="form-wrap" >
